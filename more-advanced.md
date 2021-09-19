@@ -1,0 +1,10 @@
+<ol>
+    <li>What is the difference between git reset and git revert. When would you use one over the other? <br>
+    answer : git reset - a way to move the tip of a branch to a different commit. git revert - undoes a commit by creating a new commit.<br> If a commit has been made somewhere in the project's history, and you later decide that the commit is wrong and should not have been done, then git revert is the tool for the job. If you have made a commit, but haven't shared it with anyone else and you decide you don't want it, then you can use git reset to rewrite the history so that it looks as though you never made that commit.</li>
+    <li>What is the difference between git merge and git rebase. When would you use one over the other?<br>
+    answer : Git rebase and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature branch into a master. Git merge adds a new commit, preserving the history.</li>
+    <li>What is the difference between git stash pop and git stash apply. When would you use one over the other?<br>
+    answer : git stash pop throws away the (topmost, by default) stash after applying it, whereas git stash apply leaves it in the stash list for possible later reuse (or you can then git stash drop it).If you want to apply your top stashed changes to current non-staged change and delete that stash as well, then you should go for git stash pop. But if you are want to apply your top stashed changes to current non-staged change without deleting it, then you should go for git stash apply</li>
+    <li>What kinds of things can you do in interactive mode when rebasing?<br>
+    answer : Interactive rebase in Git is a tool that provides more manual control of your history revision process. Interactive rebasing can be used for changing commits in many ways such as editing, deleting, and squashing.</li>
+</ol>
